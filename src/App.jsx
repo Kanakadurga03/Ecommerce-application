@@ -1,15 +1,15 @@
-import './App.css'
-import Carousel from './Component/Carousel'
-import Navbar from './Component/navbar'
-import Slides from './Component/Slides'
+import Footer from './Component/Footer'
+import Navbar from './Component/Navbar'
+import Routers from './Routings/Routers'
 
 function App() {
 
   return (
     <>
       <Navbar />
-      <Carousel />
-      <Slides />
+      <Routers />
+      <Footer />
+      
     </>
   )
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import SliderImport from "react-slick";
 import "../App.css"
+import { Link } from "react-router-dom";
 
 const Slider = SliderImport.default ?? SliderImport;
 
@@ -29,10 +30,23 @@ function Carousel() {
                 <h1>Out, Or in. You</h1>
                 <h1>Choose</h1>
                 <p>₹9,999 <span> <del> ₹14,999</del></span></p>
-                <button className="btn1">Shop Now</button>
+                <Link
+                                to="/product/1"
+                                className="shop-now-link"
+                            >
+                                <button className="btn1">
+                                    Shop Now
+                                </button>
+                            </Link>
               </div>
               <div className="col-lg-4">
-                <img src="jbl660nc-1.png" alt="" className='image' />
+                <Link to="/product/1">
+                                <img
+                                    src="jbl660nc-1.png"
+                                    alt="JBL Live 660NC"
+                                    className="image"
+                                />
+                            </Link>
               </div>
             </div>
           </div>
@@ -46,10 +60,23 @@ function Carousel() {
                 <h1>Featherweight For</h1>
                 <h1>Comfort All-Day.</h1>
                 <p>₹1,099 <span> <del> ₹2,999</del></span></p>
-                <button className="btn1">Shop Now</button>
+                <Link
+                                to="/product/3"
+                                className="shop-now-link"
+                            >
+                                <button className="btn1">
+                                    Shop Now
+                                </button>
+                            </Link>
               </div>
               <div className="col-lg-4">
-                <img src="boat131-3.png" alt="" className='image' />
+                <Link to="/product/3">
+                                <img
+                                    src="boat131-3.png"
+                                    alt="boAt Airdopes 131"
+                                    className="image"
+                                />
+                            </Link>
               </div>
             </div>
           </div>
@@ -63,10 +90,23 @@ function Carousel() {
                 <h1>Give Your Favourite</h1>
                 <h1>Music A Boost.</h1>
                 <p>₹13,489 <span> <del> ₹19,990</del></span></p>
-                <button className="btn1">Shop Now</button>
+                <Link
+                                to="/product/7"
+                                className="shop-now-link"
+                            >
+                                <button className="btn1">
+                                    Shop Now
+                                </button>
+                            </Link>
               </div>
               <div className="col-lg-4">
-                <img src="sonyXb910n-1.png" alt="" className='image' />
+                <Link to="/product/7">
+                                <img
+                                    src="sonyXb910n-1.png"
+                                    alt="Sony WH-XB910N"
+                                    className="image"
+                                />
+                            </Link>
               </div>
             </div>
           </div>
