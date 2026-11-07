@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html,body,#root{
+  background-color: black;
+  min-height: 100%;
+  color: white;
+}
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 480px;
+    padding: 80px 150px;
+    background-color: black;
+    overflow: hidden;
+}
+
+.bgname {
+    position: absolute;
+    top: -10%;
+    left: 10%;
+    font-size: 280px;
+    font-weight: 400;
+    opacity: 0.15;
+    color: rgb(238, 236, 236);
+    z-index: 0;
+}
+
+.hero .row {
+    position: relative;
+    z-index: 1;
+    min-height: 350px;
+    align-items: center;
+}
+
+.image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.hero h3{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.hero p{
+  margin-top: 20px;
+}
+
+span{
+  color: gray;
+}
+
+.btn1 {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: orangered;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.featured-carousel {
+    width: 100%;
+    background-color: #141414;
+    color: white;
+    padding: 50px 30px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.featured-carousel h2 {
+    font-size: 24px;
+    margin-bottom: 65px;
+}
+
+.featured-carousel .slick-slide .product-card {
+    transform: scale(0.65);
+    opacity: 0.45;
+    transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+.featured-carousel .slick-slide:has(+ .slick-center) .product-card,
+.featured-carousel .slick-center + .slick-slide .product-card {
+    transform: scale(0.85);
+    opacity: 0.75;
+}
+
+.featured-carousel .slick-slide:has(+ .slick-slide + .slick-center) .product-card,
+.featured-carousel .slick-center + .slick-slide + .slick-slide .product-card {
+    transform: scale(0.72);
+    opacity: 0.55;
+}
+
+.featured-carousel .slick-center .product-card {
+    transform: scale(1.15);
+    opacity: 1;
+}
+
+.featured-carousel .product-card {
+    padding: 15px 5px;
+    text-align: center;
+}
+
+.featured-carousel .product-name {
+    font-size: 13px;
+    color: #aaa;
+    min-height: 35px;
+}
+
+.featured-carousel .product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin: 10px auto;
+}
+
+.featured-carousel .product-card h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.featured-carousel .slick-dots {
+    bottom: -45px;
+}
+
+.featured-carousel .slick-dots li button:before {
+    color: #777;
+    font-size: 9px;
+}
+
+.featured-carousel .slick-dots li.slick-active button:before {
+    color: red;
+}
